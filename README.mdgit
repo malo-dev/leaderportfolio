@@ -1,0 +1,1 @@
+# leaderportfolio initgit add README.mdgit commit -m first commitgit branch -M mangit remote add origin https://github.com/malo-dev/leaderportfolio.gitgit push -u origin man
