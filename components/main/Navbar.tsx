@@ -34,10 +34,10 @@ const Navbar = () => {
             <a href="#projects" className="cursor-pointer">
               Projects
             </a>
-            <a href="#contact" className="cursor-pointer">
+            <a href="https://www.linkedin.com/in/leader-mushio-4b7a3923b/" className="cursor-pointer">
               Me-Contactez
             </a>
-            <a href="#contact" className="cursor-pointer">
+            <a href="https://dev.to/malodev_38/parlons-un-peu-du-tdd-2jkh" className="cursor-pointer">
               Blog
             </a>
           </div>
