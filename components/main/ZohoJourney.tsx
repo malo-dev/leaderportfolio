@@ -16,7 +16,7 @@ const ZohoJourney = () => {
             Mon Parcours Zoho
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Expert certifié Zoho avec plus de 5 ans d'expérience dans l'implémentation et l'optimisation des solutions Zoho
+            Expert certifié Zoho avec plus de 5 ans d&apos;expérience dans l&apos;implémentation et l&apos;optimisation des solutions Zoho
           </p>
         </motion.div>
 
@@ -24,7 +24,7 @@ const ZohoJourney = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column - Roles */}
           <motion.div
-            variants={slideInFromLeft}
+            variants={slideInFromLeft(0.5)}
             className="lg:col-span-1"
           >
             <div className="bg-gradient-to-br from-purple-900/20 to-cyan-900/20 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6">
@@ -40,7 +40,7 @@ const ZohoJourney = () => {
                   <h3 className="font-semibold text-white mb-2">CHEF DE PROJET & INTÉGRATEUR ZOHO</h3>
                 </div>
                 <div className="p-4 bg-cyan-500/10 rounded-lg border border-cyan-500/20">
-                  <h3 className="font-semibold text-white mb-2">DÉVELOPPEUR D'APPLICATIONS PERSONNALISÉES ZOHO</h3>
+                  <h3 className="font-semibold text-white mb-2">DÉVELOPPEUR D&apos;APPLICATIONS PERSONNALISÉES ZOHO</h3>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ const ZohoJourney = () => {
                       <li>• Mise en place de tableaux de bord interactifs pour le suivi des KPIs</li>
                       <li>• Gestion des solutions Zoho pour la relation client et la comptabilité</li>
                       <li>• Migration de données depuis systèmes existants vers Zoho</li>
-                      <li>• Développement d'applications internes sur Zoho Creator</li>
+                      <li>• Développement d&apos;applications internes sur Zoho Creator</li>
                     </ul>
                   </div>
                 </div>
@@ -92,9 +92,9 @@ const ZohoJourney = () => {
                     <p className="text-purple-300 text-sm mb-2">2021-2022</p>
                     <ul className="text-gray-300 text-sm space-y-1">
                       <li>• Support technique de niveau 2 pour les utilisateurs</li>
-                      <li>• Pilotage de l'implémentation complète de Zoho CRM et Zoho Desk</li>
+                      <li>• Pilotage de l&apos;implémentation complète de Zoho CRM et Zoho Desk</li>
                       <li>• Création de workflows automatisés pour le suivi des prospects</li>
-                      <li>• Formation des équipes sur l'utilisation optimale des outils Zoho</li>
+                      <li>• Formation des équipes sur l&apos;utilisation optimale des outils Zoho</li>
                     </ul>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ const ZohoJourney = () => {
                     <h3 className="font-bold text-white">Assodip</h3>
                     <p className="text-cyan-300 text-sm mb-2">2019-2020</p>
                     <ul className="text-gray-300 text-sm space-y-1">
-                      <li>• Conception et développement d'applications métiers sur Zoho Creator</li>
+                      <li>• Conception et développement d&apos;applications métiers sur Zoho Creator</li>
                       <li>• Intégration des applications Zoho avec des systèmes ERP</li>
                       <li>• Création de tableaux de bord interactifs pour le suivi en temps réel</li>
                     </ul>
@@ -118,7 +118,7 @@ const ZohoJourney = () => {
 
           {/* Right Column - Skills & Contact */}
           <motion.div
-            variants={slideInFromRight}
+            variants={slideInFromRight(0.5)}
             className="lg:col-span-1 space-y-6"
           >
             {/* Skills */}
@@ -135,7 +135,7 @@ const ZohoJourney = () => {
                 </div>
                 <div className="p-3 bg-purple-500/10 rounded-lg border border-purple-500/20">
                   <h4 className="font-semibold text-white text-sm">Zoho Creator</h4>
-                  <p className="text-gray-300 text-xs">Développement d'applications personnalisées avec Deluge Script</p>
+                  <p className="text-gray-300 text-xs">Développement d&apos;applications personnalisées avec Deluge Script</p>
                 </div>
                 <div className="p-3 bg-cyan-500/10 rounded-lg border border-cyan-500/20">
                   <h4 className="font-semibold text-white text-sm">Zoho Desk</h4>
