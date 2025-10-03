@@ -37,8 +37,11 @@ const Navbar = () => {
             <a href="#zoho-journey" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap">
               Parcours Zoho
             </a>
+            <a href="#zoho-projects" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap">
+              Projets Zoho
+            </a>
             <a href="#projects" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap">
-              Projets
+              Autres Projets
             </a>
             <a href="#contact" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap">
               Contact

@@ -4,6 +4,7 @@ import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
 import Experience from "@/components/main/Experience";
 import ZohoJourney from "@/components/main/ZohoJourney";
+import ZohoProjects from "@/components/main/ZohoProjects";
 import Footer from "@/components/main/Footer";
 import Contact from "@/components/main/Contact";
 import Image from "next/image";
@@ -16,6 +17,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <ZohoJourney />
+        <ZohoProjects />
         <Encryption />
         <Projects />
         <Contact />
