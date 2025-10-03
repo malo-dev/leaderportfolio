@@ -1,0 +1,9 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="80" height="80" rx="16" fill="#E74C3C"/>
+  <path d="M20 25h40v30H20z" fill="white" opacity="0.9"/>
+  <path d="M25 30h30v5H25z" fill="#E74C3C"/>
+  <path d="M25 38h20v3H25z" fill="#E74C3C"/>
+  <path d="M25 44h25v3H25z" fill="#E74C3C"/>
+  <circle cx="50" cy="40" r="3" fill="#E74C3C"/>
+  <text x="40" y="70" text-anchor="middle" fill="white" font-size="10" font-weight="bold">CRM</text>
+</svg>

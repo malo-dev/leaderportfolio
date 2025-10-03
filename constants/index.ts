@@ -249,6 +249,30 @@ export const Skill_data = [
       width: 60,
       height: 60,
     },
+    {
+      skill_name: "Zoho CRM",
+      Image: "/zoho-crm.svg",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Zoho Creator",
+      Image: "/zoho-creator.svg",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Zoho Books",
+      Image: "/zoho-books.svg",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Zoho Analytics",
+      Image: "/zoho-analytics.svg",
+      width: 70,
+      height: 70,
+    },
   ];
   
   

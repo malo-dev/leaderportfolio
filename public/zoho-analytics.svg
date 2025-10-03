@@ -1,0 +1,10 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="80" height="80" rx="16" fill="#F39C12"/>
+  <rect x="20" y="20" width="40" height="35" rx="4" fill="white" opacity="0.9"/>
+  <rect x="25" y="45" width="4" height="8" fill="#F39C12"/>
+  <rect x="32" y="40" width="4" height="13" fill="#F39C12"/>
+  <rect x="39" y="35" width="4" height="18" fill="#F39C12"/>
+  <rect x="46" y="30" width="4" height="23" fill="#F39C12"/>
+  <path d="M25 35l6-3 6-5 8-2" stroke="#F39C12" stroke-width="2" fill="none"/>
+  <text x="40" y="70" text-anchor="middle" fill="white" font-size="8" font-weight="bold">ANALYTICS</text>
+</svg>
