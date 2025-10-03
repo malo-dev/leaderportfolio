@@ -146,7 +146,7 @@ const Projects = () => {
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Découvrez une sélection de mes projets les plus récents, allant des applications mobiles 
-            aux systèmes de gestion d'entreprise complexes.
+            aux systèmes de gestion d&apos;entreprise complexes.
           </p>
         </div>
         

@@ -73,8 +73,8 @@ const Experience = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Expert certifié en solutions Zoho avec plus de 5 ans d'expérience dans l'implémentation 
-            et le développement d'applications métier sur l'écosystème Zoho.
+            Expert certifié en solutions Zoho avec plus de 5 ans d&apos;expérience dans l&apos;implémentation 
+            et le développement d&apos;applications métier sur l&apos;écosystème Zoho.
           </p>
         </motion.div>
 

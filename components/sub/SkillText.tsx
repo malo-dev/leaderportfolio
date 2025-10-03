@@ -29,7 +29,7 @@ const SkillText = () => {
         variants={slideInFromRight(0.5)}
         className='text-lg sm:text-xl text-gray-300 mb-10 mt-[10px] text-center max-w-2xl mx-auto leading-relaxed'
         >
-            Spécialisé dans l'écosystème Zoho et les technologies web modernes pour créer des solutions innovantes
+            Spécialisé dans l&apos;écosystème Zoho et les technologies web modernes pour créer des solutions innovantes
         </motion.div>
     </div>
   )
