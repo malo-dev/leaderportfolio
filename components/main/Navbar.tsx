@@ -43,9 +43,10 @@ const Navbar = () => {
             <a href="#projects" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap">
               Autres Projets
             </a>
-            <a href="#contact" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap">
+            {/* Section contact temporairement masquée */}
+            {/* <a href="#contact" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap">
               Contact
-            </a>
+            </a> */}
             <a href="https://dev.to/malodev_38/parlons-un-peu-du-tdd-2jkh" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap" target="_blank" rel="noopener noreferrer">
               Blog
             </a>

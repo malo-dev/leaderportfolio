@@ -20,7 +20,8 @@ export default function Home() {
         <ZohoProjects />
         <Encryption />
         <Projects />
-        <Contact />
+        {/* Section contact temporairement masquée */}
+        {/* <Contact /> */}
         <Footer />
       </div>
     </main>

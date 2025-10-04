@@ -75,7 +75,8 @@ const Contact = () => {
               <h3 className="text-2xl font-bold text-white mb-6">Informations de Contact</h3>
               
               <div className="space-y-6">
-                <div className="flex items-center space-x-4">
+                {/* Informations personnelles temporairement masquées */}
+                {/* <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full flex items-center justify-center">
                     <FaEnvelope className="text-white text-lg" />
                   </div>
@@ -93,7 +94,7 @@ const Contact = () => {
                     <p className="text-gray-300 text-sm">Téléphone</p>
                     <p className="text-white font-medium">+256795873560</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full flex items-center justify-center">
@@ -105,7 +106,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4">
+                {/* <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full flex items-center justify-center">
                     <FaLinkedin className="text-white text-lg" />
                   </div>
@@ -113,7 +114,7 @@ const Contact = () => {
                     <p className="text-gray-300 text-sm">LinkedIn</p>
                     <p className="text-white font-medium">MUSHIO ATAULWA LEADER</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
