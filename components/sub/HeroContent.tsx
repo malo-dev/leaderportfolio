@@ -25,7 +25,7 @@ const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Portfolio Développeur Expert Zoho
+            Portfolio Développeur Web & Mobile • Expert Zoho
           </h1>
         </motion.div>
 
@@ -38,7 +38,7 @@ const HeroContent = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               MUSHIO ATAULWA LEADER{" "}
             </span>
-            Expert Zoho & Développeur Full Stack
+            Expert Zoho, Web & Mobile (React Native) & Full Stack
           </span>
         </motion.div>
 
@@ -46,8 +46,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-base sm:text-lg text-gray-400 my-5 max-w-[600px] leading-relaxed"
         >
-          Je suis un Ingénieur Logiciel Full Stack spécialisé dans l&apos;écosystème Zoho avec une expertise 
-          en développement Web, Mobile et Applications métier. Découvrez mes projets et compétences.
+          Ingénieur Logiciel Full Stack spécialisé dans l&apos;écosystème Zoho, le Web (HTML, CSS, Tailwind, React, Next.js, Vue, TypeScript) et le Mobile (React Native). Compétent en DevOps (Docker, Kubernetes) et plateformes (Vercel, GitHub), ainsi qu&apos;en CMS & e-commerce (WordPress, Shopify).
         </motion.p>
         <motion.button
           variants={slideInFromLeft(1)}
@@ -152,7 +151,14 @@ const HeroContent = () => {
                           'Workflows & Blueprints - Automatisation',
                           'Custom Functions - Logique métier',
                           'Widgets personnalisés - Interface utilisateur',
-                          'Intégrations tierces - ERP, e-commerce, etc.'
+                          'Intégrations tierces - ERP, e-commerce, etc.',
+                          'Frontend - HTML, CSS, Tailwind',
+                          'Frameworks Web - React, Next.js, Vue',
+                          'Langage - TypeScript',
+                          'Mobile - React Native',
+                          'DevOps - Docker, Kubernetes',
+                          'Plateformes - Vercel, GitHub',
+                          'CMS & e-commerce - WordPress, Shopify'
                         ].map((skill, index) => (
                           <div key={index} className="flex items-start space-x-2">
                             <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>

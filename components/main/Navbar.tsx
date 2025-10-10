@@ -19,12 +19,12 @@ const Navbar = () => {
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            Expert Zoho
+            Expert Zoho • Web & Mobile
           </span>
         </a>
 
-        <div className="hidden lg:flex w-[700px] h-full flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[25px] py-[12px] rounded-full text-gray-200 gap-6">
+        <div className="hidden lg:flex w-full max-w-[1100px] h-full flex-row items-center justify-between md:mr-20">
+          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[25px] py-[12px] rounded-full text-gray-200 gap-6 overflow-x-auto whitespace-nowrap">
             <a href="#about-me" className="cursor-pointer hover:text-purple-400 transition-colors duration-300 text-sm font-medium whitespace-nowrap">
               À propos
             </a>

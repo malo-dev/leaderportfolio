@@ -19,6 +19,19 @@ const experiences = [
     )
   },
   {
+    title: "Développeur Backend (Python, Node.js, Express, TypeScript)",
+    company: "Projets divers",
+    period: "2020 - Présent",
+    description:
+      "Conception d'API REST sécurisées avec Express/Node.js, services backend en TypeScript, intégrations avec bases de données (PostgreSQL/MySQL/MongoDB), scripts et automations en Python.",
+    technologies: ["Node.js", "Express", "TypeScript", "Python", "PostgreSQL", "MySQL", "MongoDB"],
+    icon: (
+      <svg className="w-8 h-8 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 14H7v-2h4v2zm6-4H7V10h10v2zm0-4H7V6h10v2z" />
+      </svg>
+    ),
+  },
+  {
     title: "Administrateur Systèmes & Solutions Cloud",
     company: "CIRTMSS",
     period: "2022 - 2023",

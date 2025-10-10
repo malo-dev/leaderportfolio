@@ -273,6 +273,18 @@ export const Skill_data = [
       width: 70,
       height: 70,
     },
+    {
+      skill_name: "Vercel",
+      Image: "/vercel.svg",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "GitHub",
+      Image: "/github-142-svgrepo-com.svg",
+      width: 70,
+      height: 70,
+    },
   ];
   
   
