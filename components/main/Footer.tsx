@@ -62,7 +62,7 @@ const Footer = () => {
 
             <div className="mt-12 pt-8 border-t border-gray-700 w-full">
                 <div className="text-base text-center text-gray-400">
-                    &copy; 2024 MUSHIO ATAULWA LEADER - Expert Zoho. Tous droits réservés.
+                    &copy; 2024 MUSHIO ATAULWA LEADER - IA • Web • Mobile • Cybersécurité. Tous droits réservés.
                 </div>
             </div>
         </div>

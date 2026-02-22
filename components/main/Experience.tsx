@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import React from "react";
@@ -6,11 +7,11 @@ import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
 
 const experiences = [
   {
-    title: "Consultant & Expert Zoho",
-    company: "Bim Africa",
-    period: "2023 - 2024",
-    description: "Déploiement complet de Zoho CRM et Zoho Books pour des PME et ONG. Automatisation des processus de vente et de facturation. Intégration Zoho avec Shopify, QuickBooks et Google Workspace. Formation de plus de 100 utilisateurs.",
-    technologies: ["Zoho CRM", "Zoho Books", "Intégrations API", "Formation"],
+    title: "Ingénieur Étude et Développement (IA • Web • Mobile • Cybersécurité)",
+    company: "Tech Projects",
+    period: "2024 - 2026",
+    description: "Conception d'architectures cloud-native, intégration IA (LLMs, NLP) dans les workflows métiers, sécurité applicative et mobile (OWASP), mise en place de CI/CD et monitoring.",
+    technologies: ["IA", "LLMs", "NLP", "Node.js", "TypeScript", "React Native", "CI/CD", "OWASP"],
 
     icon: (
       <svg className="w-8 h-8 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
@@ -21,9 +22,9 @@ const experiences = [
   {
     title: "Développeur Backend (Python, Node.js, Express, TypeScript)",
     company: "Projets divers",
-    period: "2020 - Présent",
+    period: "2019 - 2024",
     description:
-      "Conception d'API REST sécurisées avec Express/Node.js, services backend en TypeScript, intégrations avec bases de données (PostgreSQL/MySQL/MongoDB), scripts et automations en Python.",
+      "Conception d'API REST sécurisées, services backend en TypeScript, intégrations avec bases de données (PostgreSQL/MySQL/MongoDB), scripts et automations en Python.",
     technologies: ["Node.js", "Express", "TypeScript", "Python", "PostgreSQL", "MySQL", "MongoDB"],
     icon: (
       <svg className="w-8 h-8 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
@@ -35,8 +36,8 @@ const experiences = [
     title: "Administrateur Systèmes & Solutions Cloud",
     company: "CIRTMSS",
     period: "2022 - 2023",
-    description: "Mise en place de tableaux de bord interactifs pour le suivi des KPIs. Gestion des solutions Zoho pour la relation client et la comptabilité. Migration de données depuis systèmes existants vers Zoho. Développement d'applications internes sur Zoho Creator.",
-    technologies: ["Zoho Analytics", "Migration de données", "Zoho Creator", "Tableaux de bord"],
+    description: "Mise en place de tableaux de bord interactifs pour le suivi des KPIs. Gestion des infrastructures et sécurité, migration de données et automatisation des processus.",
+    technologies: ["DevOps", "Monitoring", "Docker", "Kubernetes", "Dashboards"],
 
     icon: (
       <svg className="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
@@ -45,11 +46,11 @@ const experiences = [
     )
   },
   {
-    title: "Chef de Projet & Intégrateur Zoho",
+    title: "Chef de Projet & Intégrateur",
     company: "RADPI, ONG",
     period: "2021 - 2022",
-    description: "Support technique de niveau 2 pour les utilisateurs. Pilotage de l'implémentation complète de Zoho CRM et Zoho Desk. Création de workflows automatisés pour le suivi des prospects. Formation des équipes sur l'utilisation optimale des outils Zoho.",
-    technologies: ["Zoho CRM", "Zoho Desk", "Workflows", "Support technique"],
+    description: "Support technique de niveau 2 pour les utilisateurs. Pilotage de l'implémentation complète d'outils CRM et Desk. Création de workflows automatisés pour le suivi des prospects. Formation des équipes.",
+    technologies: ["CRM", "Helpdesk", "Workflows", "Support technique"],
 
     icon: (
       <svg className="w-8 h-8 text-green-400" fill="currentColor" viewBox="0 0 24 24">
@@ -58,11 +59,11 @@ const experiences = [
     )
   },
   {
-    title: "Développeur d'Applications Personnalisées Zoho",
+    title: "Développeur d'Applications Personnalisées",
     company: "Assodip",
     period: "2019 - 2020",
-    description: "Conception et développement d'applications métiers sur Zoho Creator. Intégration des applications Zoho avec des systèmes ERP. Création de tableaux de bord interactifs pour le suivi en temps réel.",
-    technologies: ["Zoho Creator", "Deluge Script", "Intégrations ERP", "Tableaux de bord"],
+    description: "Conception et développement d'applications métiers personnalisées. Intégrations avec des systèmes ERP. Création de tableaux de bord interactifs pour le suivi en temps réel.",
+    technologies: ["Custom Apps", "ERP", "Dashboards", "Widgets"],
 
     icon: (
       <svg className="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
@@ -86,12 +87,11 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Expérience
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}Zoho
+              {" "}Tech
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Expert certifié en solutions Zoho avec plus de 5 ans d&apos;expérience dans l&apos;implémentation 
-            et le développement d&apos;applications métier sur l&apos;écosystème Zoho.
+            Ingénieur Étude et Développement avec 6 ans d'expérience, couvrant IA, Web, Mobile, Sécurité et DevOps.
           </p>
         </motion.div>
 

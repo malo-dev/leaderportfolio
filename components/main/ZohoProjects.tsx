@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from "react";
@@ -5,101 +6,101 @@ import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
 import Image from "next/image";
 
-const zohoProjects = [
+const portfolioProjects = [
   {
     id: 1,
-    title: "Plateforme de Gestion Hospitalière - CIRTMSS",
+    title: "Plateforme IA pour l'Analyse Médicale",
     client: "CIRTMSS",
     period: "2022 - 2023",
-    description: "Développement d&apos;une solution complète de gestion hospitalière utilisant Zoho Creator et Analytics. Gestion des patients, rendez-vous, personnel médical et facturation avec tableaux de bord interactifs.",
-    technologies: ["Zoho Creator", "Zoho Analytics", "Zoho Books", "Custom Functions", "Deluge Script"],
+    description: "R&D et développement d'une plateforme IA pour l'analyse des données médicales : tableaux de bord temps réel, détection d'anomalies et alertes intelligentes.",
+    technologies: ["Python", "TensorFlow", "FastAPI", "Next.js", "PostgreSQL"],
     features: [
-      "Gestion complète des dossiers patients",
-      "Système de prise de rendez-vous en ligne",
-      "Gestion du personnel médical et des plannings",
-      "Facturation automatisée",
-      "Tableaux de bord médicaux en temps réel"
+      "Tableaux de bord intelligents",
+      "Pipeline de données temps réel",
+      "Détection d'anomalies",
+      "Alertes et reporting",
+      "Sécurité et conformité"
     ],
     results: [
-      "Digitalisation complète des processus",
-      "Réduction de 50% des erreurs administratives",
-      "Amélioration de 70% de l&apos;efficacité opérationnelle"
+      "Amélioration de 70% de la visibilité opérationnelle",
+      "Réduction de 50% des erreurs manuelles",
+      "Automatisation end-to-end des processus"
     ],
     screenshot: "/dash.png",
     isInternal: true
   },
   {
     id: 2,
-    title: "Système CRM Complet - Bim Africa",
+    title: "Application Mobile & Web de Gestion",
     client: "Bim Africa",
     period: "2023 - 2024",
-    description: "Implémentation complète d&apos;un système CRM Zoho pour gérer plus de 5000 clients et prospects. Automatisation des processus de vente, intégration avec les systèmes de paiement mobile et création de tableaux de bord personnalisés.",
-    technologies: ["Zoho CRM", "Zoho Books", "API Integration", "Workflows", "Analytics"],
+    description: "Développement d'une application mobile et web intégrée pour la gestion de clients, paiements, et reporting. Architecture full-stack moderne et sécurisée.",
+    technologies: ["React Native", "Next.js", "Node.js", "Stripe", "MongoDB"],
     features: [
-      "Gestion de pipeline de vente automatisée",
-      "Intégration avec systèmes de paiement mobile",
-      "Tableaux de bord en temps réel",
-      "Automatisation des emails de suivi",
-      "Rapports de performance avancés"
+      "Gestion de pipeline et CRM léger",
+      "Intégration paiements mobiles",
+      "Tableaux de bord temps réel",
+      "Email & notifications",
+      "Rapports avancés"
     ],
     results: [
-      "Augmentation de 40% du taux de conversion",
-      "Réduction de 60% du temps de traitement des leads",
-      "Amélioration de 35% de la satisfaction client"
+      "+40% taux de conversion",
+      "-60% temps de traitement",
+      "+35% satisfaction utilisateur"
     ],
-    screenshot: "/zoho-crm-mockup.svg",
+    screenshot: "/Dashboard.png",
     isInternal: false
   },
   {
     id: 3,
-    title: "Solution de Support Client - RADPI ONG",
+    title: "Portail Support & Knowledge Base",
     client: "RADPI, ONG",
     period: "2021 - 2022",
-    description: "Mise en place d&apos;un système de support client complet avec Zoho Desk et CRM. Création de workflows automatisés pour le suivi des demandes et formation des équipes.",
-    technologies: ["Zoho Desk", "Zoho CRM", "Workflows", "SLA Management", "Knowledge Base"],
+    description: "Mise en place d'un portail de support avec système de tickets, base de connaissances, intégrations et automation pour améliorer l'expérience utilisateur.",
+    technologies: ["Next.js", "Node.js", "PostgreSQL", "ElasticSearch", "Docker"],
     features: [
-      "Système de tickets automatisé",
-      "Base de connaissances interactive",
-      "Gestion des SLA et escalades",
-      "Intégration CRM pour suivi client",
-      "Rapports de performance du support"
+      "Tickets & SLA",
+      "Base de connaissances",
+      "Intégration CRM",
+      "Rapports de performance",
+      "Automatisation"
     ],
     results: [
-      "Réduction de 45% du temps de résolution",
-      "Augmentation de 60% de la satisfaction client",
-      "Amélioration de 80% de la traçabilité des demandes"
+      "-45% temps de résolution",
+      "+60% satisfaction",
+      "+80% traçabilité"
     ],
-    screenshot: "/zoho-orders-mockup.svg",
+    screenshot: "/dash.png",
     isInternal: true
   },
   {
     id: 4,
-    title: "Application Métier Personnalisée - Assodip",
+    title: "Application Métier Personnalisée",
     client: "Assodip",
     period: "2019 - 2020",
-    description: "Conception et développement d&apos;une application métier sur Zoho Creator pour la gestion des membres, événements et finances de l&apos;association.",
-    technologies: ["Zoho Creator", "Deluge Script", "Custom Widgets", "API Integration", "Mobile App"],
+    description: "Conception d'une application métier pour la gestion des membres, événements et finances, avec application mobile et automation.",
+    technologies: ["React", "Node.js", "React Native", "REST APIs", "MySQL"],
     features: [
-      "Gestion complète des membres",
-      "Planification et suivi des événements",
-      "Gestion financière et comptable",
-      "Application mobile native",
-      "Système de notifications automatiques"
+      "Gestion des membres",
+      "Événements & planification",
+      "Gestion financière",
+      "Application mobile",
+      "Notifications automatiques"
     ],
     results: [
-      "Automatisation complète des processus",
-      "Réduction de 70% du travail administratif",
-      "Amélioration de 90% de la communication interne"
+      "Automatisation complète",
+      "-70% travail administratif",
+      "+90% communication"
     ],
     screenshot: "/Dashboard.png",
     isInternal: true
   }
 ];
 
-const ZohoProjects = () => {
+const ProjectsSection = () => {
 
   return (
-    <section id="zoho-projects" className="relative w-full min-h-screen py-20 px-4 md:px-8">
+    <section id="projects" className="relative w-full min-h-screen py-20 px-4 md:px-8">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-blue-900/10 to-cyan-900/10" />
       
@@ -115,18 +116,17 @@ const ZohoProjects = () => {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Projets
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
-              {" "}Zoho Réalisés
+              {" "}IA • Web • Mobile • Cybersécurité
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Découvrez mes réalisations concrètes avec l&apos;écosystème Zoho : systèmes CRM, applications métier, 
-            solutions de gestion et automatisations pour diverses entreprises et organisations.
+            Découvrez mes réalisations orientées IA, Web, Mobile et Cybersécurité : plateformes intelligentes, applications performantes et intégrations sécurisées.
           </p>
         </motion.div>
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {zohoProjects.map((project, index) => (
+          {portfolioProjects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
@@ -221,11 +221,10 @@ const ZohoProjects = () => {
         >
           <div className="bg-black/30 backdrop-blur-sm rounded-2xl border border-purple-500/20 p-8">
             <h3 className="text-2xl font-bold text-white mb-4">
-              Besoin d&apos;une solution Zoho personnalisée ?
+              Vous avez un projet IA, Web, Mobile ou Cybersécurité ?
             </h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Fort de mon expérience sur ces projets, je peux vous accompagner dans la conception 
-              et l&apos;implémentation de votre solution Zoho sur mesure.
+{"              Je peux vous accompagner dans la conception et l'implémentation d'une solution sur mesure, performante et sécurisée."}
             </p>
             <a
               href="#contact"
@@ -242,4 +241,4 @@ const ZohoProjects = () => {
   );
 };
 
-export default ZohoProjects;
+export default ProjectsSection;

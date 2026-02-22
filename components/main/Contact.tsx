@@ -58,7 +58,8 @@ const Contact = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Prêt à transformer votre entreprise avec Zoho ? Discutons de vos besoins et trouvons ensemble la solution parfaite.
+           {"Êtes-vous prêt à transformer votre entreprise avec l'IA, le Web, le Mobile et la Cybersécurité ? Discutons de vos besoins et trouvons ensemble la solution parfaite."}
+
           </p>
         </motion.div>
 
@@ -119,11 +120,12 @@ const Contact = () => {
             </div>
 
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
-              <h3 className="text-xl font-bold text-white mb-4">Mes Spécialités Zoho</h3>
+              <h3 className="text-xl font-bold text-white mb-4">{`Domaines d'expertise`}</h3>
+
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  'Zoho CRM', 'Zoho Books', 'Zoho Creator', 'Zoho Analytics',
-                  'Zoho Desk', 'Zoho Projects', 'Zoho One', 'Intégrations API'
+                  'Intelligence Artificielle', 'Développement Web', 'Applications Mobile', 'Cybersécurité',
+                  'Cloud & DevOps', 'Intégrations API', 'Bases de Données', 'Automatisation'
                 ].map((skill, index) => (
                   <div key={index} className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-lg p-2 text-center">
                     <span className="text-white text-sm font-medium">{skill}</span>
@@ -212,7 +214,7 @@ const Contact = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-black/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-none"
-                    placeholder="Décrivez votre projet ou vos besoins Zoho..."
+                    placeholder="Décrivez votre projet en IA, Web, Mobile ou Cybersécurité..."
                   />
                 </div>
 

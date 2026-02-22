@@ -9,8 +9,45 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { useLanguage } from "@/components/sub/LanguageContext";
 
 const HeroContent = () => {
+  const { lang } = useLanguage();
+  const title = lang === "fr" ? "Portfolio IA • Web • Mobile • Cybersécurité" : "AI • Web • Mobile • Cybersecurity Portfolio";
+  const heroIntroA = lang === "fr" ? "Je suis" : "I am";
+  const heroName = "MUSHIO ATAULWA LEADER";
+  const heroRole = lang === "fr" ? "Ingénieur Étude et Développement • IA • Web • Mobile • Cybersécurité" : "R&D Engineer • AI • Web • Mobile • Cybersecurity";
+  const heroDesc = lang === "fr"
+    ? "Ingénieur Étude et Développement avec 6 ans d'expérience: IA (LLMs, NLP, computer vision), Web (React, Next.js, Vue, TypeScript), Mobile (React Native), DevOps (Docker, Kubernetes), Sécurité (OWASP, Auth, CI/CD) et plateformes (Vercel, GitHub)."
+    : "R&D Engineer with 6 years of experience: AI (LLMs, NLP, computer vision), Web (React, Next.js, Vue, TypeScript), Mobile (React Native), DevOps (Docker, Kubernetes), Security (OWASP, Auth, CI/CD) and platforms (Vercel, GitHub).";
+  const moreBtn = lang === "fr" ? "En savoir plus" : "Learn more";
+  const modalTitle = lang === "fr" ? "Mon Parcours" : "My Journey";
+  const modalSubtitle = lang === "fr" ? "Focus: IA • Web • Mobile • Cybersécurité" : "Focus: AI • Web • Mobile • Cybersecurity";
+  const modalSection1 = lang === "fr" ? "Parcours Professionnel" : "Professional Background";
+  const modalSection2 = lang === "fr" ? "Compétences Techniques" : "Technical Skills";
+
+  const skillLines = (lang === "fr"
+    ? [
+        'IA - LLMs, NLP, Computer Vision',
+        'Backend - Node.js, Express, TypeScript',
+        'Frontend - HTML, CSS, Tailwind, React, Next.js, Vue',
+        'Mobile - React Native',
+        'Sécurité - OWASP, Auth, CI/CD',
+        'DevOps - Docker, Kubernetes',
+        'Plateformes - Vercel, GitHub',
+        'CMS & e-commerce - WordPress, Shopify'
+      ]
+    : [
+        'AI - LLMs, NLP, Computer Vision',
+        'Backend - Node.js, Express, TypeScript',
+        'Frontend - HTML, CSS, Tailwind, React, Next.js, Vue',
+        'Mobile - React Native',
+        'Security - OWASP, Auth, CI/CD',
+        'DevOps - Docker, Kubernetes',
+        'Platforms - Vercel, GitHub',
+        'CMS & e-commerce - WordPress, Shopify'
+      ]);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <motion.div
@@ -25,7 +62,7 @@ const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Portfolio Développeur Web & Mobile • Expert Zoho
+            {title}
           </h1>
         </motion.div>
 
@@ -34,11 +71,11 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Je suis{" "}
+            {heroIntroA}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              MUSHIO ATAULWA LEADER{" "}
+              {heroName}{" "}
             </span>
-            Expert Zoho, Web & Mobile (React Native) & Full Stack
+            {heroRole}
           </span>
         </motion.div>
 
@@ -46,14 +83,14 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-base sm:text-lg text-gray-400 my-5 max-w-[600px] leading-relaxed"
         >
-          Ingénieur Logiciel Full Stack spécialisé dans l&apos;écosystème Zoho, le Web (HTML, CSS, Tailwind, React, Next.js, Vue, TypeScript) et le Mobile (React Native). Compétent en DevOps (Docker, Kubernetes) et plateformes (Vercel, GitHub), ainsi qu&apos;en CMS & e-commerce (WordPress, Shopify).
+          {heroDesc}
         </motion.p>
         <motion.button
           variants={slideInFromLeft(1)}
           onClick={() => setIsModalOpen(true)}
           className="py-3 px-6 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] hover:scale-105 transition-transform duration-300 font-semibold"
         >
-          En savoir plus
+          {moreBtn}
         </motion.button>
       </div>
 
@@ -63,22 +100,21 @@ const HeroContent = () => {
       >
         <Image
           src="/mainIconsdark.svg"
-          alt="icônes de travail"
+          alt={lang === "fr" ? "icônes de travail" : "work icons"}
           height={650}
           width={650}
           className="w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[650px] h-auto"
         />
       </motion.div>
 
-      {/* Modal Expérience Zoho */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-black/90 border border-purple-500/30 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div className="p-6">
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Mon Expérience Zoho</h3>
-                  <p className="text-purple-400 font-medium">Expert & Consultant Zoho depuis 2019</p>
+                  <h3 className="text-2xl font-bold text-white mb-2">{modalTitle}</h3>
+                  <p className="text-purple-400 font-medium">{modalSubtitle}</p>
                 </div>
                 <button
                   onClick={() => setIsModalOpen(false)}
@@ -92,96 +128,28 @@ const HeroContent = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-white font-semibold mb-4 text-lg">Parcours Professionnel</h4>
+                  <h4 className="text-white font-semibold mb-4 text-lg">{modalSection1}</h4>
                   <div className="space-y-4">
                     <div className="bg-gradient-to-r from-purple-500/10 to-cyan-500/10 rounded-lg p-4 border border-purple-500/20">
-                      <h5 className="text-purple-400 font-semibold mb-2">Consultant & Expert Zoho (2023-2024)</h5>
-                      <p className="text-gray-300 text-sm mb-2">Bim Africa</p>
-                      <p className="text-gray-400 text-sm">Implémentation complète d&apos;un système CRM Zoho pour gérer plus de 5000 clients. Automatisation des processus de vente et intégration avec les systèmes de paiement mobile.</p>
+                      <h5 className="text-purple-400 font-semibold mb-2">{lang === "fr" ? "Ingénieur Étude et Développement (2024-2026)" : "R&D Engineer (2024-2026)"}</h5>
+                      <p className="text-gray-300 text-sm mb-2">{lang === "fr" ? "Projets Tech" : "Tech Projects"}</p>
+                      <p className="text-gray-400 text-sm">{lang === "fr" ? "Conception et développement d'architectures cloud-native, intégration IA (LLMs) dans des workflows métiers, sécurité applicative et mobile (OWASP), mise en place de CI/CD et monitoring." : "Design and development of cloud-native architectures, AI (LLMs) integration in business workflows, application and mobile security (OWASP), CI/CD setup and monitoring."}</p>
                     </div>
-                    
                     <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-lg p-4 border border-cyan-500/20">
-                      <h5 className="text-cyan-400 font-semibold mb-2">Administrateur Systèmes & Solutions Cloud (2022-2023)</h5>
-                      <p className="text-gray-300 text-sm mb-2">CIRTMSS</p>
-                      <p className="text-gray-400 text-sm">Développement d&apos;une solution complète de gestion hospitalière utilisant Zoho Creator et Analytics. Gestion des patients, rendez-vous, personnel médical et facturation.</p>
-                    </div>
-                    
-                    <div className="bg-gradient-to-r from-purple-500/10 to-cyan-500/10 rounded-lg p-4 border border-purple-500/20">
-                      <h5 className="text-purple-400 font-semibold mb-2">Chef de Projet & Intégrateur Zoho (2021-2022)</h5>
-                      <p className="text-gray-300 text-sm mb-2">RADPI, ONG</p>
-                      <p className="text-gray-400 text-sm">Pilotage de l&apos;implémentation complète de Zoho CRM et Zoho Desk. Création de workflows automatisés et formation des équipes.</p>
-                    </div>
-                    
-                    <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-lg p-4 border border-cyan-500/20">
-                      <h5 className="text-cyan-400 font-semibold mb-2">Développeur d&apos;Applications Personnalisées Zoho (2019-2020)</h5>
-                      <p className="text-gray-300 text-sm mb-2">Assodip</p>
-                      <p className="text-gray-400 text-sm">Conception et développement d&apos;applications métiers sur Zoho Creator. Intégration avec des systèmes ERP et création de tableaux de bord interactifs.</p>
+                      <h5 className="text-cyan-400 font-semibold mb-2">{lang === "fr" ? "Développeur Full-Stack (2019-2024)" : "Full-Stack Developer (2019-2024)"}</h5>
+                      <p className="text-gray-300 text-sm mb-2">{lang === "fr" ? "Entreprise privée" : "Private Company"}</p>
+                      <p className="text-gray-400 text-sm">{lang === "fr" ? "Développement web et mobile, APIs sécurisées, intégrations tierces, optimisation des performances et bonnes pratiques DevOps." : "Web and mobile development, secure APIs, third-party integrations, performance optimization and DevOps best practices."}</p>
                     </div>
                   </div>
                 </div>
                 
                 <div>
-                  <h4 className="text-white font-semibold mb-4 text-lg">Expertise Technique</h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <h5 className="text-purple-400 font-semibold mb-3">Applications Zoho Maîtrisées</h5>
-                      <div className="space-y-2">
-                        {[
-                          'Zoho CRM - Configuration avancée et automatisation',
-                          'Zoho Creator - Développement d\'applications métier',
-                          'Zoho Analytics - Tableaux de bord et rapports',
-                          'Zoho Books - Gestion financière et comptable',
-                          'Zoho Desk - Support client et gestion des tickets',
-                          'Zoho Projects - Gestion de projets et collaboration'
-                        ].map((skill, index) => (
-                          <div key={index} className="flex items-start space-x-2">
-                            <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-gray-300 text-sm">{skill}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <h5 className="text-cyan-400 font-semibold mb-3">Compétences Techniques</h5>
-                      <div className="space-y-2">
-                        {[
-                          'Deluge Script - Programmation avancée',
-                          'API REST - Intégrations personnalisées',
-                          'Workflows & Blueprints - Automatisation',
-                          'Custom Functions - Logique métier',
-                          'Widgets personnalisés - Interface utilisateur',
-                          'Intégrations tierces - ERP, e-commerce, etc.',
-                          'Frontend - HTML, CSS, Tailwind',
-                          'Frameworks Web - React, Next.js, Vue',
-                          'Langage - TypeScript',
-                          'Mobile - React Native',
-                          'DevOps - Docker, Kubernetes',
-                          'Plateformes - Vercel, GitHub',
-                          'CMS & e-commerce - WordPress, Shopify'
-                        ].map((skill, index) => (
-                          <div key={index} className="flex items-start space-x-2">
-                            <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-gray-300 text-sm">{skill}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div>
-                  <h4 className="text-white font-semibold mb-4 text-lg">Résultats Obtenus</h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {[
-                      { metric: '5000+', description: 'Clients gérés via CRM Zoho' },
-                      { metric: '70%', description: 'Amélioration efficacité opérationnelle' },
-                      { metric: '60%', description: 'Réduction temps traitement leads' },
-                      { metric: '50%', description: 'Diminution erreurs administratives' }
-                    ].map((result, index) => (
-                      <div key={index} className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-lg p-4 border border-green-500/20">
-                        <div className="text-2xl font-bold text-green-400 mb-1">{result.metric}</div>
-                        <div className="text-gray-300 text-sm">{result.description}</div>
+                  <h5 className="text-cyan-400 font-semibold mb-3">{modalSection2}</h5>
+                  <div className="space-y-2">
+                    {skillLines.map((skill, index) => (
+                      <div key={index} className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-gray-300 text-sm">{skill}</span>
                       </div>
                     ))}
                   </div>
